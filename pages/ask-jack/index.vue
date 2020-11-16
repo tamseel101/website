@@ -15,7 +15,7 @@
       />
     </div>
     <a id="ask-upper-year-form"></a>
-    <form action="https://formspree.io/xwkrdzyg" method="POST">
+    <form action="http://localhost:8080/ask-jack" method="POST">
       <div class="mb-3 mt-2 cssc-heading">
         Ask Your Question
       </div>
@@ -91,6 +91,11 @@
 
 <script>
 export default {
+  methods: {
+    onSubmit() {
+      this.$router.push('/')
+    },
+  },
   data: () => {
     return {
       question: '',
